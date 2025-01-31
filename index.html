@@ -22,6 +22,22 @@
         .font-sora{
             font-family: "Sora", serif;
         }
+
+        @keyframes zoom-in {
+            from {
+                    transform: scale(0.8);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+        }
+
+        .zoom-in {
+            animation: zoom-in 1s ease-out forwards;
+        }
+
      </style>
 
 </head>
@@ -58,14 +74,63 @@
         </div>
 
         <!-- banner section -->
-        <div class="max-w-screen-xl mx-auto flex flex-col items-center text-center">
-            <h1 class="text-5xl font-semibold mt-24 mb-8">Freshness <span class="text-[#179800]">You Can <br class="hidden lg:block"> Count</span> On, Prices You’ll Love!</h1>
+        <div class="max-w-screen-xl mx-auto flex flex-col items-center text-center opacity-0 transform zoom-in">
+            <h1 class="text-5xl font-semibold mt-16 lg:mt-24 mb-8">Freshness <span class="text-[#179800]">You Can <br class="hidden lg:block"> Count</span> On, Prices You’ll Love!</h1>
             <p class="mb-9 mx-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br class="hidden lg:block"> staples, we’ve got you covered every day!</p>
             <img class="mb-6" src="assets/hero-vegetables.png" alt="">
         </div>
     </header>
 
     <main>
+        <!-- services section -->
+         <section class="max-w-screen-xl mx-auto px-3 lg:px-28 py-3 lg:py-5">
+            <!-- service header -->
+            <div>
+                <h1 class="text-4xl text-[#179800] mt-12 lg:mt-32 mb-8 lg:mb-12">Services</h1>
+            </div>
+
+            <!-- service card -->
+            <div class="flex justify-center items-center gap-6 mb-[140px]">
+                <div class="card bg-base-100 w-96 bg-[#EFEBE3]">
+                    <figure class="px-10 pt-10">
+                        <div class="w-[150px] h-[150px] rounded-full bg-white p-6 flex items-center justify-center overflow-hidden">
+                            <img src="assets/service.png" alt="service" class="w-full h-full object-contain">
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p>Offer 24/7 services and sincerely<br> deliver foods and groceries at your doorsteps anytime you want</p>
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 w-96 bg-[#EFEBE3]">
+                    <figure class="px-10 pt-10">
+                        <div class="w-[150px] h-[150px] rounded-full bg-white p-6 flex items-center justify-center overflow-hidden">
+                            <img src="assets/delivery.png" alt="service" class="w-full h-full object-contain">
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p>Offer 24/7 services and sincerely<br> deliver foods and groceries at your doorsteps anytime you want</p>
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 w-96 bg-[#EFEBE3]">
+                    <figure class="px-10 pt-10">
+                        <div class="w-[150px] h-[150px] rounded-full bg-white p-6 flex items-center justify-center overflow-hidden">
+                            <img src="assets/healthy.png" alt="service" class="w-full h-full object-contain">
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p>Offer 24/7 services and sincerely<br> deliver foods and groceries at your doorsteps anytime you want</p>
+                    </div>
+                </div>
+            
+            </div>
+         </section>       
 
     </main>
 

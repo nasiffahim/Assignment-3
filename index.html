@@ -31,16 +31,44 @@
             from {
                     transform: scale(0.8);
                     opacity: 0;
-                }
-                to {
+            }
+            to {
                     transform: scale(1);
                     opacity: 1;
-                }
+            }
         }
 
         .zoom-in {
             animation: zoom-in 1s ease-out forwards;
         }
+
+        @keyframes upDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(1.5rem); }
+        }
+        
+        .up-down {
+            animation: upDown 2s ease-in-out infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .rotate {
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes moveLeftRight {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(1.5rem); }
+        }
+
+        .move-left-right {
+            animation: moveLeftRight 2s ease-in-out infinite;
+        }
+
 
         @media screen and (max-width:576px) {
             .xs-font, .checked{
@@ -149,7 +177,22 @@
         <div class="max-w-screen-2xl mx-auto flex flex-col items-center text-center opacity-0 transform zoom-in">
             <h1 class="text-5xl font-semibold mt-16 lg:mt-24 mb-8">Freshness <span class="text-[#179800]">You Can <br class="hidden lg:block"> Count</span> On, Prices You’ll Love!</h1>
             <p class="mb-9 mx-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br class="hidden lg:block"> staples, we’ve got you covered every day!</p>
-            <img class="mb-6" src="assets/hero-vegetables.png" alt="">
+            
+            <div class="w-full relative contents">
+                <img class="" src="assets/hero-vegetables.png" alt="">
+
+                <div class="absolute top-[380px] lg:top-[300px] right-12 lg:right-[400px] opacity-30 up-down">
+                    <i class="fa-solid fa-leaf text-3xl lg:text-5xl text-[#179800]"></i>
+                </div>
+
+                <div class="absolute top-[450px] lg:top-[420px] left-10 lg:left-[350px] opacity-30 rotate">
+                    <i class="fa-solid fa-apple-whole text-3xl lg:text-5xl text-red-700"></i>
+                </div>
+
+                <div class="absolute bottom-[70px] lg:bottom-[150px] right-12 lg:right-[400px] opacity-30 move-left-right">
+                    <i class="fa-solid fa-carrot text-3xl lg:text-5xl text-orange-600"></i>
+                </div>
+            </div>           
         </div>
     </header>
 

@@ -86,6 +86,28 @@
                 width: 120px;
                 height: 160px;
             }
+
+            .subscriber{
+                flex-direction: column;
+            }
+
+            .subscriber-text{
+                text-align: center;
+            }
+
+            .text-size{
+                font-size: 1rem;
+            }
+
+            .subscriber-img{
+                width: 232px;
+                height: 182px;
+            }
+
+            .subscriber-input{
+                width: 312px;
+                height: 42px;
+            }
         }
 
      </style>
@@ -201,7 +223,7 @@
             <div class="center-align">
                 <div class="lg:flex items-center gap-4 mb-12 lg:mb-[140px]">
                     <!-- big card -->
-                    <div class="relative w-96 lg:w-[400px] h-[390px] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg p-6 bottom-margin">
+                    <div class="relative w-96 lg:w-[440px] h-[390px] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg p-6 bottom-margin">
                         <div class="absolute top-10 left-8">
                             <h2 class="text-3xl font-bold text-white">
                                 <span class="text-[#EFEBE3] font-bold">30%</span> off
@@ -346,13 +368,13 @@
     </main>
 
     <main>
-        <section class="max-w-screen-2xl mx-auto px-6 lg:px-28 py-3 lg:py-5">
+        <section class="max-w-screen-2xl mx-auto my-auto px-6 lg:px-28 py-3 lg:py-5">
             <!-- service header -->
             <div>
                 <h1 class="text-4xl text-[#179800] font-bold mt-12 lg:mt-32 mb-8 lg:mb-12">Arrival & Offers</h1>
             </div>
 
-            <div class="lg:flex items-center gap-5 mb-[389px]">
+            <div class="lg:flex items-center gap-5 mb-[270px] lg:mb-[389px]">
                 <div class="relative w-96 lg:w-[780px] h-[190px] lg:h-[344px] rounded-xl bg-[#115414] mb-4 lg:mb-0">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                       <img src="assets/dawat-mock-up.png" class="absolute bottom-0 right-3 arrival-card-img"/>
@@ -382,7 +404,54 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-[#179800]">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-28 py-3 lg:py-5">
+
+            <!-- subscriber section -->
+            <div class="relative top-[-230px] w-full flex justify-center items-center h-[460px] gap-4 lg:gap-32 bg-[#EFEBE3] rounded-xl subscriber">
+                <div>
+                    <img src="assets/vegetable-busket.png" alt="" class="subscriber-img">
+                </div>
+                
+                <div>
+                    <h2 class="text-xl lg:text-3xl font-semibold mb-4 lg:mb-5 subscriber-text">Get Grocery News!</h2>
+                    <p class="text-base lg:text-xl mx-6 lg:mx-0 mb-4 lg:mb-9 subscriber-text">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="text" placeholder="Enter email..." class="input mx-8 lg:mx-0 mb-4 lg:mb-9 w-[312px] lg:w-[472px] h-[42px] lg:h-[67px]" />
+                    <div class="subscriber-text">
+                        <button class="px-7 py-2 text-white bg-[#179800] rounded-lg">Subscribe</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- footer section -->
+             <div class="text-white subscriber flex justify-between mt-[-150px] lg:mt-0 mb-10 lg:mb-[140px]">
+                <div class="max-w-[430px] mb-10 lg:mb-0">
+                    <img src="assets/logo-footer.png" alt="" class="mb-3">
+                    <p class="text-base lg:text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                </div>
+
+                <div class="text-xl mr-0 lg:mr-[300px]">
+                    <ul class="">
+                        <li class="mb-5 lg:mb-10"><a>Product</a></li>
+                        <li class="mb-5 lg:mb-10"><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                      </ul>
+                </div>
+
+                <div class="pt-12 lg:pt-20">
+                    <p class="mb-4">Follow Us</p>
+                    <div class="text-3xl">
+                        <span class="mr-5"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="mr-5"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="mr-5"><i class="fa-brands fa-linkedin"></i></span>
+                        <span><i class="fa-brands fa-youtube"></i></span>
+                    </div>
+                    
+                </div>
+             </div>
+            
+        </div>
 
     </footer>
 </body>
